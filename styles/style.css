@@ -9,12 +9,12 @@ body {
     margin: 0 30px;
 }
 
-body * {
-    /*border: 2px solid orangered;*/
-    font-family: "Merriweather", "Courier New", "Times New Roman", sans-serif;
-    font-size: 22px;
-    color: black;
-}
+/*body * {*/
+/*    !*border: 2px solid orangered;*!*/
+/*    font-family: "Merriweather", "Courier New", "Times New Roman", sans-serif;*/
+/*    font-size: 22px;*/
+/*    color: black;*/
+/*}*/
 
 header {
     display: grid;
@@ -92,14 +92,38 @@ h2 {
 /*----------------------------------LESSON 2*/
 /*----------------------------------*/
 /*----------------------------------*/
-.row {
+
+#lesson2-header {
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#lesson2-header h1 {
+    margin: 0;
+    padding-top: 22px;
+}
+#lesson2-header h2 {
+    margin: 0;
+    padding: 22px;
+}
+
+.cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .card h1 {
-    color: #395C6B;
+    color: #BCD3F2;
     font-size: 50px;
+    background-color: #395C6B;
+    margin-top: 0;
+    padding-top: 34px;
+    padding-bottom: 12px;
+    border-radius: var(--border-rad) var(--border-rad) 0 0;
+    border: var(--card-bord);
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
 
 .card h2 {
@@ -111,13 +135,32 @@ h2 {
     border: var(--card-bord);
     background-color: #BCD3F2;
     border-radius: var(--border-rad);
+    width: 95%;
 }
 
 .lesson-2-img {
-    width: 500px;
-    display: block;
+    width: 90%;
 }
 
 .lesson-2-img-container {
-    justify-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px){
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 768px){
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 992px){
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.container {
+    font-family: 'Roboto', sans-serif;
 }
