@@ -1,3 +1,8 @@
+:root {
+    --border-rad: 25px;
+    --card-bord: 2px solid #395C6B;
+}
+
 body {
     text-align: center;
     padding: 0;
@@ -83,3 +88,36 @@ h2 {
     margin: 15px;
 }
 
+
+/*----------------------------------LESSON 2*/
+/*----------------------------------*/
+/*----------------------------------*/
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card h1 {
+    color: #395C6B;
+    font-size: 50px;
+}
+
+.card h2 {
+    color: #395C6B;
+    font-size: 30px;
+}
+
+.card {
+    border: var(--card-bord);
+    background-color: #BCD3F2;
+    border-radius: var(--border-rad);
+}
+
+.lesson-2-img {
+    width: 500px;
+    display: block;
+}
+
+.lesson-2-img-container {
+    justify-items: center;
+}
