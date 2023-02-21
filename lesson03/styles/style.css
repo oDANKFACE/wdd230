@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nunito:wght@200;400;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Nunito", Verdana, sans-serif;
+}
+
+
+
+header,
+footer {
+    background-color: #124E78;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+header,
+main,
+footer {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+nav {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+h1 {
+    color: #0F4063;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+header h1 {
+    color: #F0F0C9;
+    padding-bottom: 40px;
+    font-weight: 800;
+}
+
+main {
+    padding: 0 30px;
+}
+
+h2 {
+    color: #124E78;
+    padding: 25px 0 7px;
+    font-weight: 550;
+}
+
+h3 {
+    color: #3E6E88;
+    padding-bottom: 5px;
+    font-weight: 550;
+}
+
+#logo {
+    width: 120px;
+}
+
+.audience-block {
+    padding-bottom: 25px;
+}
+
+p, li {
+    font-weight: 400;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 0 5px 0;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.blue-color {
+    background-color: #0080FF;
+    color: #F8F4F9;
+}
+
+.red-color {
+    background-color: #FC6471;
+    color: #F8F4F9;
+}
+.white-color {
+    background-color: #F8F4F9;
+    color: #1B1725;
+}
+.gray-color {
+    background-color: #534B62;
+    color: #F8F4F9;
+}
+.dark-color {
+    background-color: #1B1725;
+    color: #F8F4F9;
+}
+.color-code {
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+#font-1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+}
+#font-2 {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 30px;
+}
