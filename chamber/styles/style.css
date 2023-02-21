@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Nunito", Verdana, sans-serif;
+}
+
+header, footer {
+    background-color: #0080FF;
+    color: #F8F4F9;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.home-box {
+    background-color: #534B62;
+    height: 50px;
+    margin: 20px 0;
+    color: #F8F4F9;
+    padding: 10px;
+}
+
+#current-date {
+    background-color: #F8F4F9;
+    color: #0080FF;
+    margin: 0 40px;
+}
+
+
+/*TABLET SCREEN SIZE-------------------------------------------*/
+/*-------------------------------------------------------------*/
+@media screen and (min-width: 720px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+/*DESKTOP SCREEN SIZE------------------------------------------*/
+/*-------------------------------------------------------------*/
+@media screen and (min-width: 1080px) {
+
+}
