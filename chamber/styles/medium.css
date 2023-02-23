@@ -1,0 +1,52 @@
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #main-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #join-box {
+        display: block;
+    }
+
+    #hero-box, #spotlight-box, #join-box, #news-box{
+        width: 100%;
+    }
+
+    #hero-box {
+        order: 1;
+    }
+
+    #news-box {
+        order: 2;
+    }
+
+    #spotlight-box {
+        order: 3;
+    }
+
+    #join-box {
+        order: 4;
+    }
+
+    #event-box {
+        order: 5;
+        width: 66%;
+    }
+
+    #weather-box {
+        order: 6;
+        width: 33%;
+    }
+    #spotlight-box {
+        display: flex;
+        flex-direction: row;
+    }
+    .spotlight-info {
+        width: 50%;
+    }
+    nav {
+        width: 60%;
+    }
+
+}

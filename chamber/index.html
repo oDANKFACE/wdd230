@@ -3,48 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Chamber of Commerce</title>
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
 </head>
 <body>
 <header>
-    <img src="#" id="nav-logo">
-    <h1>Eagle Mountain</h1>
-    <h2>Chamber of Commerce</h2>
-    <nav>
-        <ul>
-            <li><a href="">Discover</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="header-flex">
+        <img src="images/logo.png" id="nav-logo" alt="logo">
+        <div class="header-titles">
+            <h1>Eagle Mountain</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
+        <div class="social-icon">F</div>
+        <div class="social-icon">in</div>
+        <div class="material-symbols-outlined hamburger-menu menu-button">Menu</div>
+        <nav>
+            <div class="nav-header-flex">
+                <div class="nav-open-logo"><img src="images/logo.png" alt="logo"></div>
+                <div id="nav-close">X</div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <div id="current-date">Current Date Here</div>
 </header>
 <main>
-    <div id="hero-box" class="home-box">
-        <p>Hero Information</p>
-    </div>
-    <div id="event-box" class="home-box">
-        <p>Event Information</p>
-    </div>
-    <div id="weather-box" class="home-box">
-        <p>Weather Information</p>
-    </div>
-    <div id="news-box" class="home-box">
-        <p>News Information</p>
-    </div>
-    <div id="spotlight-box" class="home-box">
-        <p>Spotlight Information</p>
+    <div id="main-flex">
+        <div id="hero-box" class="home-box">
+            <p>Hero Information</p>
+        </div>
+        <div id="event-box" class="home-box">
+            <p>Event Information</p>
+        </div>
+        <div id="weather-box" class="home-box">
+            <p>Weather Information</p>
+        </div>
+        <div id="news-box" class="home-box">
+            <p>News Information</p>
+        </div>
+        <div id="spotlight-box" class="home-box">
+            <div class="spotlight-info">Spotlight 1</div>
+            <div class="spotlight-info">Spotlight 2</div>
+            <div class="spotlight-info spotlight-3">Spotlight 3</div>
+        </div>
+        <div id="join-box" class="home-box">Join</div>
     </div>
 </main>
 <footer>
-    <img src="#">
+    <img src="images/logo.png" id="footer-logo" alt="logo">
     <h2>Eagle Mountain Chamber of Commerce</h2>
-    <div>address here</div>
-    <div>email</div>
-    <div>phone</div>
-    <div>location</div>
+    <div>1234 Mulberry St</div>
+    <div>emcoc@eaglemountainutah.com</div>
+    <div>555-555-1234</div>
 </footer>
 
+<script src="scripts/scripts.js" />
 </body>
 </html>
