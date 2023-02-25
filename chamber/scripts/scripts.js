@@ -1,6 +1,6 @@
 // select the elements to manipulate (output to)
 const datefield = document.querySelector("#current-date");
-
+const copyright = document.querySelector('#copyright');
 
 // derive the current date using a date object
 const now = new Date();
@@ -17,3 +17,10 @@ hamburger.addEventListener('click', () => {
 closeHamburger.addEventListener('click', () => {
     document.querySelector('nav').style.display = 'none';
 });
+
+
+document.querySelector(
+    "#lastModified"
+).textContent = `Last Modification: ${document.lastModified}`;
+
+copyright.textContent = now.getFullYear();

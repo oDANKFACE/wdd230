@@ -138,6 +138,9 @@ footer * {
 .social-icon * {
     width: 3em;
 }
+a, a:visited {
+    color: #F8F4F9;
+}
 
 
 
