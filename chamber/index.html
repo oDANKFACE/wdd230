@@ -10,67 +10,162 @@
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" >
-</head>
-<body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><body>
 <header>
-    <div id="header-flex">
-        <img src="images/logo.png" id="nav-logo" alt="logo">
-        <div class="header-titles">
-            <h1>Eagle Mountain</h1>
-            <h2>Chamber of Commerce</h2>
+    <div id="home-banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    <div class="top-header-flex">
+        <div class="header-brand-flex">
+            <img src="images/logo.png" id="nav-logo" alt="logo">
+            <h1 class="header-city">Eagle Mountain</h1>
         </div>
-        <div class="social-icon"><a href="https://www.facebook.com"><img src="images/fb-icon.png" alt="facebook"></a> </div>
-        <div class="social-icon"><a href="https://www.linkedin.com/"><img src="images/in-icon.png" alt="linkedin"></a></div>
-        <div class="material-symbols-outlined hamburger-menu menu-button">Menu</div>
-        <nav>
-            <div class="nav-header-flex">
-                <div class="nav-open-logo"><img src="images/logo.png" alt="logo"></div>
-                <div id="nav-close">X</div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="">Discover</a></li>
-                <li><a href="">Directory</a></li>
-                <li><a href="">Join</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-socials-flex">
+            <div class="fb-icon social-icon"><a href="https://www.facebook.com"><img src="images/fb-icon.png" alt="facebook"></a> </div>
+            <div class="in-icon social-icon"><a href="https://www.linkedin.com/"><img src="images/in-icon.png" alt="linkedin"></a></div>
+<!--            <div><img src="images/menu.png"></div>-->
+            <span class="material-symbols-outlined menu-button">menu</span>
+        </div>
     </div>
+
+
+    <nav>
+        <div class="nav-header-flex">
+            <div class="nav-open-logo"><img src="images/logo.png" alt="logo"></div>
+            <div id="nav-close">X</div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Directory</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Join</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <div id="current-date">Current Date Here</div>
 </header>
+
 <main>
     <div id="main-flex">
-        <div id="hero-box" class="home-box">
-            <p>Hero Information</p>
+        <div class="fat-box">
+            <h2 class="fat-slogan">Stronger Together</h2>
+            <div class="fat-subtitle">Your Local Chamber of Commerce</div>
+            <div id="fat-message" class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin diam nisl, pulvinar ut
+                accumsan in, ornare et purus. Fusce commodo sapien nec leo tristique, id consectetur urna convallis. In
+                at risus maximus, egestas ligula ac, ullamcorper orci. Curabitur interdum ante tellus. Praesent
+                venenatis augue in velit feugiat, ut pretium eros dignissim. Cras efficitur sapien non eros rutrum, ut
+                dapibus magna maximus. Aenean efficitur augue sed ipsum suscipit, nec finibus velit tempor. In venenatis
+                in ligula eget volutpat. Nunc accumsan arcu augue, sit amet mollis sapien interdum nec. Etiam eu lectus.
+            </div>
+            <div class="fat-get-started"><button>Get Started Button</button></div>
         </div>
         <div id="event-box" class="home-box">
-            <p>Event Information</p>
+            <div class="box-title">Single Business Owners Event</div>
+            <div class="box-content">
+                <div>
+                    For all you lonely souls out there, <span class="bold">Date Scam LLC.</span> is holding their annual
+                    meet and greet. Come on down for a night of fun and surprises for a low sign up fee of $79!
+                </div>
+                <div class="more-info">more...</div>
+            </div>
         </div>
         <div id="weather-box" class="home-box">
-            <p>Weather Information</p>
+            <div class="box-title">Weather</div>
+            <div id="weather-top">
+                <div id="weather-symbol">Amon Sul</div>
+                <div id="weather-degrees">33</div>
+            </div>
+            <div id="weather-bar"></div>
+            <div id="weather-bottom">
+                <div class="weather-item">
+                    <div class="weather-label">Wind Speed:</div>
+                    <div id="wind-speed" class="weather-value">33mph</div>
+                </div>
+                <div class="weather-item">
+                    <div class="weather-label">Wind Chill:</div>
+                    <div id="wind-chill" class="weather-value">33</div>
+                </div>
+
+            </div>
         </div>
         <div id="news-box" class="home-box">
-            <p>News Information</p>
+            <div class="box-title">Breaking News</div>
+            <div class="box-content">
+                <div>
+                    Catman, the Purrfect Protector, has been spotted outside City Hall giving business advice to local
+                    passers! The EMPD advises caution against dog walking, and wash all clothing that has had contact
+                    cat nip before seeking counsel from The Catman.
+                </div>
+            </div>
         </div>
-        <div id="spotlight-box" class="home-box">
-            <div class="spotlight-info">Spotlight 1</div>
-            <div class="spotlight-info">Spotlight 2</div>
-            <div class="spotlight-info spotlight-3">Spotlight 3</div>
+        <div id="spotlight-big-box" class="home-box">
+            <div id="spotlight-1" class="spotlight-box">
+                <div class="box-title">Zombie Insurance Co.</div>
+                <div class="spotlight-logo"><img src="images/Placeholders/ph_1.jpg" alt="Zombie Insurance Company logo, a zombie walking with suitcase">
+                    <div class="spotlight-logo-description">[logo will be a zombie walking with suitcase]</div></div>
+                <div class="spotlight-slogan">Got infected? Get brains--I mean... payed... yeah.</div>
+                <div class="spotlight-bar"></div>
+                <div class="spotlight-contact">
+                    <div>email@address.com</div>
+                    <div>123.4567.8901</div>
+                </div>
+            </div>
+            <div id="spotlight-2" class="spotlight-box">
+                <div class="box-title">Inconvenience Store</div>
+                <div class="spotlight-logo"><img src="images/Placeholders/ph_2.jpg" alt="Inconvenience Store logo, a neon 'closed' sign">
+                    <div class="spotlight-logo-description">[logo will be a neon 'closed' sign]</div></div>
+                <div class="spotlight-slogan">We're closed when you need us most</div>
+                <div class="spotlight-bar"></div>
+                <div class="spotlight-contact">
+                    <div>email@address.com</div>
+                    <div>123.4567.8901</div>
+                </div>
+            </div>
+            <div id="spotlight-3" class="spotlight-box">
+                <div class="box-title">Paraformal Investigators</div>
+                <div class="spotlight-logo"><img src="images/Placeholders/ph_3.jpg" alt="Paraformal Investigators logo, a ghost dressed in formal attire with a magnifying glass">
+                    <div class="spotlight-logo-description">[logo will be a ghost dressed in formal attire with a magnifying glass]</div></div>
+                <div class="spotlight-slogan">We're always dressed to exorcise</div>
+                <div class="spotlight-bar"></div>
+                <div class="spotlight-contact">
+                    <div>email@address.com</div>
+                    <div>123.4567.8901</div>
+                </div>
+            </div>
         </div>
-        <div id="join-box" class="home-box">Join</div>
+        <div id="join-box" class="home-box">
+            <div class="join-button"><button>Get Started Button</button></div>
+            <div class="box-content">Yield yourselves up unto us and become acquainted with our business practices,
+            and become our brethren that ye may be like unto us.</div>
+        </div>
     </div>
 </main>
 <footer>
-    <img src="images/logo.png" id="footer-logo" alt="logo">
-    <h2>Eagle Mountain Chamber of Commerce</h2>
-    <div>1234 Mulberry St</div>
-    <div>emcoc@eaglemountainutah.com</div>
-    <div>555-555-1234</div>
-    <div><a href="https://goo.gl/maps/bsFuf4o1CWknCmcXA">Click Here For Location</a></div>
-    <div>Copyright &copy;<span id="copyright"></span></div>
-    <div>Darien Weller</div>
-    <div>WDD 230 Project</div>
-    <div id="lastModified"></div>
+    <div class="footer-flex">
+        <div class="footer-top">
+            <img src="images/logo.png" class="footer-logo" alt="logo">
+            <div class="footer-title"><h2>Eagle Mountain Chamber of Commerce</h2></div>
+        </div>
+        <div class="footer-bar footer-bar1"></div>
+        <div class="footer-middle">
+            <div>1234 Mulberry St</div>
+            <div>emcoc@eaglemountainutah.com</div>
+            <div>555-555-1234</div>
+            <div><a href="https://goo.gl/maps/bsFuf4o1CWknCmcXA">Click Here For Location</a></div>
+        </div>
+        <div class="footer-bar"></div>
+        <div class="footer-bottom">
+            <div>Copyright &copy;<span id="copyright"></span></div>
+            <div>Darien Weller</div>
+            <div>WDD 230 Project</div>
+            <div id="lastModified"></div>
+        </div>
+    </div>
 </footer>
 
 <script src="scripts/scripts.js"></script>

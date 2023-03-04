@@ -1,15 +1,32 @@
 @media screen and (max-width: 991px) and (min-width: 768px) {
+
+    /*HEADER----------------------------------------------------*/
+    /*----------------------------------------------------------*/
+
+    /*Nav Section---------------*/
+    nav {
+        width: 60%;
+    }
+
+
+    /*MAIN------------------------------------------------------*/
+    /*----------------------------------------------------------*/
+
+    /*General Section---------------*/
+
     #main-flex {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
+    /*Boxes--------------------*/
+
     #join-box {
         display: block;
     }
 
-    #hero-box, #spotlight-box, #join-box, #news-box{
+    #hero-box, #spotlight-big-box, #join-box, #news-box {
         width: 100%;
     }
 
@@ -21,32 +38,93 @@
         order: 2;
     }
 
-    #spotlight-box {
+    #spotlight-big-box {
         order: 3;
     }
 
     #join-box {
         order: 4;
+        text-align: center;
+    }
+
+    .join-button {
+        width: auto;
+        height: auto;
+        margin: 40px;
     }
 
     #event-box {
         order: 5;
-        width: 66%;
+        width: 60%;
+        margin-right: 0;
     }
 
     #weather-box {
         order: 6;
-        width: 33%;
+        width: 35%;
+        margin-left: 0;
     }
-    #spotlight-box {
+    #spotlight-big-box {
         display: flex;
         flex-direction: row;
     }
-    .spotlight-info {
+    .spotlight-box {
         width: 50%;
     }
-    nav {
-        width: 60%;
+    #spotlight-1 {
+
+    }
+
+    #spotlight-2 {
+        margin-top: 0;
+    }
+
+    #spotlight-3 {
+        display: none;
+    }
+
+
+
+
+
+
+    /*FOOTER----------------------------------------------------*/
+    /*----------------------------------------------------------*/
+
+    /*General Section---------------*/
+
+    .footer-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 24px;
+    }
+
+    .footer-top {
+        justify-content: left;
+        font-size: 18px;
+        height: 96px;
+        margin: 16px 0;
+        width: 50%;
+    }
+
+    .footer-title {
+        text-align: left;
+    }
+
+    .footer-bar1 {
+        display: none;
+    }
+
+    .footer-middle {
+        text-align: right;
+        width: 50%;
+        height: 96px;
+        margin: 16px 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        width: 100%;
     }
 
 }
