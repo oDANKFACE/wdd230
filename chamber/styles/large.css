@@ -1,4 +1,11 @@
 @media screen and (min-width: 992px) {
+
+    .header-city {
+        display: none;
+    }
+
+
+
     #main-flex {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
