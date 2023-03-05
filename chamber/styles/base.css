@@ -18,7 +18,7 @@ body {
     background-color: white;
 }
 
-header, footer, .fat-box{
+header, footer{
     background-color: #03045E;
     color: white;
     text-shadow: 1px 1px 4px #1B172577;
@@ -112,9 +112,9 @@ footer * a, footer * a:visited {
 /*Fat (Hero) Section---------------*/
 
 .fat-box {
-    padding: 90px 22px 90px 22px;
-    line-height: 1.5;
-    width: 100%;
+    /*padding: 90px 22px 90px 22px;*/
+    /*line-height: 1.5;*/
+    /*width: 100%;*/
 
 }
 
@@ -133,7 +133,7 @@ footer * a, footer * a:visited {
 }
 
 .fat-get-started {
-    display: none;
+    /*display: none;*/
 }
 
 .nav-header-flex {
@@ -175,7 +175,7 @@ nav list {
     border: 1px solid #00000066;
     width: 240px;
     transition: 0.5s;
-    opacity: 60%;
+    opacity: 80%;
 }
 
 .nav-item:hover {
@@ -196,7 +196,7 @@ nav {
     right: 0;
     height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: #999999;
     text-align: left;
     font-size: 3rem;
     padding: 16px;
