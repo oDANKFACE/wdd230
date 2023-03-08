@@ -346,8 +346,21 @@ nav {
     text-align: center;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: #022A7B;
+    transition: 0.4s ease;
+}
+
+.discover-box:hover .discover-img {
+    opacity: 40%;
+}
+
 .discover-img {
     width: 100%;
+    transition: 0.4s ease;
 }
 
 .discover-img-title {
@@ -360,7 +373,6 @@ nav {
     opacity: 40%;
     margin: 5px 0 35px 0;
 }
-
 
 
 /*FOOTER----------------------------------------------------*/
