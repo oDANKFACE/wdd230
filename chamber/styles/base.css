@@ -216,6 +216,14 @@ nav {
     margin: 0 0 16px;
 }
 
+#population {
+    font-size: 50px;
+    text-align: center;
+    background-color: #022A7B;
+    color: white;
+    padding: 10px;
+}
+
 .home-box {
     /*background-color: #D81E5B;*/
     height: auto;
@@ -333,7 +341,25 @@ nav {
 }
 
 
+/*Discover Page---------------*/
+.discover-box {
+    text-align: center;
+}
 
+.discover-img {
+    width: 100%;
+}
+
+.discover-img-title {
+    font-size: 48px;
+    color: black;
+    margin: 35px 0 10px 0;
+}
+
+.discover-img-subtitle {
+    opacity: 40%;
+    margin: 5px 0 35px 0;
+}
 
 
 
@@ -352,9 +378,10 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: right;
     font-size: 18px;
-    height: 90px;
+    height: 100px;
 }
 
 .footer-middle {
@@ -387,4 +414,12 @@ nav {
     margin-right: 16px;
     width: 90px;
     height: 90px;
+}
+
+
+
+
+#lastVisit {
+    margin: 12px 0;
+    font-size: 16px;
 }
