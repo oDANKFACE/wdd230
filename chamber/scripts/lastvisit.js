@@ -22,8 +22,3 @@ console.log(now.getTime())
 console.log(lastVisit)
 
 document.querySelector('#lastVisit').innerHTML += timeBetween;
-
-const div = document.createElement('div');
-
-div.innerHTML = 'asdf';
-document.querySelector()

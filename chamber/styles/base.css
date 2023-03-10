@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');*/
 
 
 :root {
@@ -153,11 +153,12 @@ footer * a, footer * a:visited {
 }
 
 #current-date {
-    background-color: #0080FF;
+    background-color: white;
     height: 1.5rem;
     width: 100%;
     text-align: center;
     margin-top: 1rem;
+    color: black;
 }
 
 
@@ -170,7 +171,6 @@ nav list {
 
 .nav-item {
     margin: 25px 5px;
-    padding: 15px 8px;
     background-color: #022A7B;
     border: 1px solid #00000066;
     width: 240px;
@@ -182,12 +182,20 @@ nav list {
     opacity: 100%;
 }
 
+.nav-link {
+    display: block;
+    height: 100%;
+}
+
 .nav-link, .nav-link:visited {
     text-decoration: none;
     color: white;
     text-shadow: none;
 }
 
+.nav-link-button {
+    padding: 15px 8px;
+}
 
 nav {
     display: none;
@@ -200,6 +208,7 @@ nav {
     text-align: left;
     font-size: 3rem;
     padding: 16px;
+    z-index: 999;
 }
 
 
@@ -342,24 +351,31 @@ nav {
 
 
 /*Discover Page---------------*/
+
 .discover-box {
     text-align: center;
+    position: relative;
 }
 
 .overlay {
     position: absolute;
     top: 0;
+    left: 0;
     opacity: 0;
     background-color: #022A7B;
     transition: 0.4s ease;
 }
 
-.discover-box:hover .discover-img {
+.discover-img-container {
+    display: inline;
+}
+
+.discover-img-container:hover .discover-img {
     opacity: 40%;
 }
 
 .discover-img {
-    width: 100%;
+    width: 70%;
     transition: 0.4s ease;
 }
 
