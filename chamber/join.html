@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Website for fictional Chamber of Commerce located in Eagle Mountain, Utah.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Chamber of Commerce</title>
+  <link href="styles/base.css" rel="stylesheet">
+  <link href="styles/medium.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<body>
+<header>
+  <div id="home-banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+  <div class="top-header-flex">
+    <div class="header-brand-flex">
+      <img src="images/logo.webp" id="nav-logo" alt="logo">
+      <h1 class="header-city">Eagle Mountain</h1>
+    </div>
+    <div class="header-socials-flex">
+      <div class="fb-icon social-icon"><a href="https://www.facebook.com"><img src="images/fb-icon.png" alt="facebook"></a> </div>
+      <div class="in-icon social-icon"><a href="https://www.linkedin.com/"><img src="images/in-icon.png" alt="linkedin"></a></div>
+      <!--            <div><img src="images/menu.png"></div>-->
+      <span class="material-symbols-outlined menu-button">menu</span>
+    </div>
+  </div>
+
+
+
+
+  <nav>
+    <div class="nav-header-flex">
+      <div class="nav-open-logo"><img src="images/logo.webp" alt="logo"></div>
+      <div id="nav-close">X</div>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="" class="nav-link">
+          <div class="nav-link-button">
+            Directory
+          </div>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="./discover.html" class="nav-link">
+          <div class="nav-link-button">
+            Discover
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="./join.html" class="nav-link">
+          <div class="nav-link-button">
+            Join
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link">
+          <div class="nav-link-button">
+            Contact
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="current-date">Current Date Here</div>
+
+</header>
+
+<main>
+  <div id="join-page-flex">
+    <div id="join-form">
+      <h1>Join the Chamber of Commerce</h1>
+      <form method="get" action="thankyou.html">
+
+        <div id="form-name-section">
+          <div id="first-name-container" class="form-item-container">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first_name" required>
+          </div>
+          <div id="last-name-container" class="form-item-container">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last_name" required>
+          </div>
+        </div>
+
+        <div id="form-contact-section">
+          <div id="email-container" class="form-item-container">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+          </div>
+          <div id="phone-container" class="form-item-container">
+            <label for="phone">Cell Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+
+        <div id="form-business-section">
+          <div id="business-name-container" class="form-item-container">
+            <label for="business-name">Business Name/Title *</label>
+            <input type="text" id="business-name" name="business_name" required>
+          </div>
+          <div id="business-position-container" class="form-item-container">
+            <label for="position-title">Business Position Title</label>
+            <input type="text" id="position-title" name="position_title" pattern="[a-zA-Z\s\-]{7,}" title="Only letters, hyphens, and spaces are allowed and minimum 7 characters are required.">
+          </div>
+          <div id="business-description-container" class="form-item-container">
+            <label for="business-description">Brief Business Description</label>
+            <textarea id="business-description" name="business_description"></textarea>
+          </div>
+        </div>
+
+        <label for="membership-level">Membership Level *</label>
+        <select id="membership-level" name="membership_level" required>
+          <option value="">Please select a membership level</option>
+          <option value="NP Membership">NP Membership (No fee)</option>
+          <option value="Bronze Membership">Bronze Membership</option>
+          <option value="Silver Membership">Silver Membership</option>
+          <option value="Gold Membership">Gold Membership</option>
+        </select>
+
+
+        <input type="submit" value="Join Now">
+
+        <div><em>* Required fields</em></div>
+
+      </form>
+
+
+
+    </div>
+    <div id="benefits">
+      <div id="benefits-title">Membership Benefits</div>
+      <div id="all-benefits">
+        <div class="benefit-level" id="np-membership">
+          <div class="benefit-label-title">NP Membership</div>
+          <div class="benefit-description">
+            Are you tired of not having superpowers? Our NP Membership level won't give you the ability to fly or turn
+            invisible. You won't even get a pet rock or a plant that grows money. Upgrade to one of our higher levels
+            and at least get something out of your membership!
+          </div>
+        </div>
+        <div class="benefit-level" id="bronze-membership">
+          <div class="benefit-label-title">Bronze Membership</div>
+          <div class="benefit-description">
+            Join our Bronze level and gain the power to control the weather! You'll also receive a free lifetime supply
+            of unicorn tears and a personal assistant who moonlights as a ninja. Plus, you'll receive a pet dragon and
+            your own personal paparazzi to capture your every moment.
+          </div>
+        </div>
+        <div class="benefit-level" id="silver-membership">
+          <div class="benefit-label-title">Silver Membership</div>
+          <div class="benefit-description">
+            Upgrade to our Silver level and gain the ability to speak every language in the universe! You'll also
+            receive a flying car, a personal chef who specializes in gourmet astronaut food, and a butler who can
+            teleport.
+          </div>
+        </div>
+        <div class="benefit-level" id="gold-membership">
+          <div class="benefit-label-title">Gold Membership</div>
+          <div class="benefit-description">
+            Our Gold membership is the ultimate level of access to all the Chamber of Commerce has to offer, including
+            the power of telekinesis! You'll also receive a personal jetpack, a yacht that can travel through time, and
+            a personal assistant who doubles as a footstool.
+          </div>
+        </div>
+      </div>
+      <div id="benefits-bottom"></div>
+
+    </div>
+  </div>
+
+
+
+</main>
+
+<footer>
+  <div class="footer-flex">
+    <div class="footer-top">
+      <img src="images/logo.webp" class="footer-logo" alt="logo">
+      <div class="footer-title"><h2>Eagle Mountain Chamber of Commerce</h2></div>
+      <div id="lastVisit">Days since your last visit: </div>
+    </div>
+    <div class="footer-bar footer-bar1"></div>
+    <div class="footer-middle">
+      <div>1234 Mulberry St</div>
+      <div>emcoc@eaglemountainutah.com</div>
+      <div>555-555-1234</div>
+      <div><a href="https://goo.gl/maps/bsFuf4o1CWknCmcXA">Click Here For Location</a></div>
+    </div>
+    <div class="footer-bar"></div>
+    <div class="footer-bottom">
+      <div>Copyright &copy;<span id="copyright"></span></div>
+      <div>Darien Weller</div>
+      <div>WDD 230 Project</div>
+      <div id="lastModified"></div>
+    </div>
+  </div>
+</footer>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/lastvisit.js"></script>
+</body>
+</html>
