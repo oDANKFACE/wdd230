@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nunito:wght@200;400;800&display=swap');
 
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -50,14 +53,10 @@ nav {
     font-size: 18px;
 }
 
-.nav-flex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+
+.nav-item {
+    margin: 0 30px;
 }
-
-
 
 nav a {
     display: block;
@@ -172,4 +171,23 @@ p, li {
 
 .black-bg {
     background: #00000088;
+}
+
+
+.nav-flex {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    .nav-flex {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
