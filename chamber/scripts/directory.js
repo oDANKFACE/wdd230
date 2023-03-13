@@ -47,7 +47,7 @@ fetch('./jsons/data.json')
 
             cardsContainer.appendChild(card);
 
-
+            //// Old way. Opted for above to help with classes for css
             // card.innerHTML = `
             //   <img src="${company.thumbnail}" alt="${company.name} logo">
             //   <h2>${company.name}</h2>
