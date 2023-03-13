@@ -1,0 +1,76 @@
+{
+  "companies": [
+    {
+      "name": "The Ultimate Unicorn Corporation",
+      "address": "123 Fantasy Lane",
+      "phone": "555-1234",
+      "membership_level": "NP",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "Bob's Burgers & Bait",
+      "address": "456 Fisherman's Wharf",
+      "phone": "555-5678",
+      "membership_level": "Bronze",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "Acme Anvils & Airplanes",
+      "address": "789 Looney Tunes Blvd",
+      "phone": "555-9101",
+      "membership_level": "Silver",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "The Martian Manicure Company",
+      "address": "42 Galaxy Drive",
+      "phone": "555-1212",
+      "membership_level": "Gold",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "Pirate's Booty Fitness",
+      "address": "777 Treasure Island",
+      "phone": "555-4444",
+      "membership_level": "NP",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "Dracula's Dentistry",
+      "address": "666 Fangs Ave",
+      "phone": "555-6789",
+      "membership_level": "Bronze",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "Zombie's R Us",
+      "address": "555 Graveyard Lane",
+      "phone": "555-1010",
+      "membership_level": "Silver",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "Bigfoot's Boutique",
+      "address": "888 Sasquatch St",
+      "phone": "555-1313",
+      "membership_level": "Gold",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    },
+    {
+      "name": "Fus Roh Dollar Store",
+      "address": "475 Whiterun Ave",
+      "phone": "555-1616",
+      "membership_level": "NP",
+      "thumbnail": "https://loremflickr.com/120/120",
+      "url": ""
+    }
+  ]
+}
