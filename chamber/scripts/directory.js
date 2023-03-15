@@ -12,6 +12,7 @@ fetch('./jsons/data.json')
             const thumbnail = document.createElement("img");
             thumbnail.className = "company-thumbnail";
             thumbnail.src = company.thumbnail;
+            thumbnail.alt = company.alt;
 
             const bar = document.createElement("div");
             bar.className = "company-bar"

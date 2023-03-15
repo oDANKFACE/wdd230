@@ -18,6 +18,25 @@
         margin: 0;
     }
 
+    .nav-list {
+        position: static;
+        flex-direction: row;
+        height: 100%;
+        width: 80%;
+        border-top: none;
+    }
+
+    .nav-item {
+        height: 100%;
+        align-items: center;
+        padding-bottom: 45px;
+        padding-top: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
     #event-box {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
@@ -27,7 +46,6 @@
     .fat-box {
         grid-column: 2 / span 1;
         grid-row: 1 / span 2;
-        background-color: white;
         justify-content: space-between;
     }
 
@@ -61,11 +79,8 @@
         height: 100% !important;
         width: 100%;
         margin: 16px;
-        color: #1B1725;
-        padding: 5px;
         display: flex;
         flex-direction: column;
-        border: 1px solid #9A989F;
 
     }
 
@@ -93,7 +108,7 @@
     }
 
     .spotlight-box {
-        border: 1px solid #00000055;
+
     }
 
     #nav-logo {
@@ -104,38 +119,6 @@
     .material-symbols-outlined {
         display: none !important;
     }
-
-    nav {
-        display: block;
-        position: relative;
-        background-color: #0080FF;
-        text-align: center;
-        font-size: 1em;
-        height: 90px;
-        padding: 0;
-        margin-top: 1em;
-    }
-
-    .nav-header-flex {
-        display: none;
-    }
-
-    .nav-list {
-        font-size: 18px;
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-    }
-    #header-flex {
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0;
-    }
-
-
 
 
 

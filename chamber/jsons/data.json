@@ -5,7 +5,8 @@
       "address": "123 Fantasy Lane",
       "phone": "555-1234",
       "membership_level": "NP",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/80/120/120",
+      "alt": "The Ultimate Unicorn Corporation logo",
       "url": ""
     },
     {
@@ -13,7 +14,8 @@
       "address": "456 Fisherman's Wharf",
       "phone": "555-5678",
       "membership_level": "Bronze",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/50/120/120",
+      "alt": "Bob's Burgers & Bait logo",
       "url": ""
     },
     {
@@ -21,7 +23,8 @@
       "address": "789 Looney Tunes Blvd",
       "phone": "555-9101",
       "membership_level": "Silver",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/99/120/120",
+      "alt": "Acme Anvils & Airplanes logo",
       "url": ""
     },
     {
@@ -29,7 +32,8 @@
       "address": "42 Galaxy Drive",
       "phone": "555-1212",
       "membership_level": "Gold",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/219/120/120",
+      "alt": "The Martian Manicure Company logo",
       "url": ""
     },
     {
@@ -37,7 +41,8 @@
       "address": "777 Treasure Island",
       "phone": "555-4444",
       "membership_level": "NP",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/4/120/120",
+      "alt": "Pirate's Booty Fitness logo",
       "url": ""
     },
     {
@@ -45,7 +50,8 @@
       "address": "666 Fangs Ave",
       "phone": "555-6789",
       "membership_level": "Bronze",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/77/120/120",
+      "alt": "Dracula's Dentistry logo",
       "url": ""
     },
     {
@@ -53,7 +59,8 @@
       "address": "555 Graveyard Lane",
       "phone": "555-1010",
       "membership_level": "Silver",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/629/120/120",
+      "alt": "Zombie's R Us logo",
       "url": ""
     },
     {
@@ -61,7 +68,8 @@
       "address": "888 Sasquatch St",
       "phone": "555-1313",
       "membership_level": "Gold",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/18/120/120",
+      "alt": "Bigfoot's Boutique logo",
       "url": ""
     },
     {
@@ -69,7 +77,8 @@
       "address": "475 Whiterun Ave",
       "phone": "555-1616",
       "membership_level": "NP",
-      "thumbnail": "https://loremflickr.com/120/120",
+      "thumbnail": "https://picsum.photos/id/600/120/120",
+      "alt": "Fus Roh Dollar Store logo",
       "url": ""
     }
   ]

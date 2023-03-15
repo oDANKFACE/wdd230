@@ -15,61 +15,22 @@
 <body>
 <header>
   <div id="home-banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
-  <div class="top-header-flex">
-    <div class="header-brand-flex">
-      <img src="images/logo.webp" id="nav-logo" alt="Eagle Mountain Chamber of Commerce logo">
-      <h1 class="header-city">Eagle Mountain</h1>
-    </div>
-    <div class="header-socials-flex">
-      <div class="fb-icon social-icon"><a href="https://www.facebook.com"><img src="images/fb-icon.png" alt="facebook"></a> </div>
-      <div class="in-icon social-icon"><a href="https://www.linkedin.com/"><img src="images/in-icon.png" alt="linkedin"></a></div>
-      <!--            <div><img src="images/menu.png"></div>-->
-      <span class="material-symbols-outlined menu-button">menu</span>
-    </div>
-  </div>
 
-
-
-
-  <nav>
-    <div class="nav-header-flex">
-      <div class="nav-open-logo"><img src="images/logo.webp" alt="logo"></div>
-      <div id="nav-close">X</div>
-    </div>
+  <nav class="nav-bar">
+    <a class="nav-logo">My Logo</a>
     <ul class="nav-list">
-      <li class="nav-item">
-        <a href="directory.html" class="nav-link">
-          <div class="nav-link-button">
-            Directory
-          </div>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./discover.html" class="nav-link">
-          <div class="nav-link-button">
-            Discover
-          </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="./join.html" class="nav-link">
-          <div class="nav-link-button">
-            Join
-          </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="" class="nav-link">
-          <div class="nav-link-button">
-            Contact
-          </div>
-        </a>
-      </li>
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="directory.html">Directory</a></li>
+      <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+      <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </nav>
-
-  <div id="current-date">Current Date Here</div>
 
 </header>
 
@@ -118,11 +79,11 @@
 
         <label for="membership-level">Membership Level *</label>
         <select id="membership-level" name="membership_level" required>
-          <option value="">Please select a membership level</option>
-          <option value="NP Membership">NP Membership (No fee)</option>
-          <option value="Bronze Membership">Bronze Membership</option>
-          <option value="Silver Membership">Silver Membership</option>
-          <option value="Gold Membership">Gold Membership</option>
+          <option class="select-options" value="">Please select a membership level</option>
+          <option class="select-options" value="NP Membership">NP Membership (No fee)</option>
+          <option class="select-options" value="Bronze Membership">Bronze Membership</option>
+          <option class="select-options" value="Silver Membership">Silver Membership</option>
+          <option class="select-options" value="Gold Membership">Gold Membership</option>
         </select>
 
         <input type="hidden" id="form-loaded-time" name="form_loaded_time" value="<?php echo date('Y-m-d H:i:s'); ?>">
@@ -204,8 +165,8 @@
     </div>
   </div>
 </footer>
+<script src="./scripts/hamburger.js"></script>
 <script src="scripts/scripts.js"></script>
-<script src="scripts/windchill.js"></script>
 <script src="scripts/lastvisit.js"></script>
 </body>
 </html>
