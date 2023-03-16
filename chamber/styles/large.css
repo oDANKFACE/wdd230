@@ -9,7 +9,7 @@
     #main-flex {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
         gap: 16px;
         margin: 16px;
     }

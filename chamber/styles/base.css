@@ -115,6 +115,36 @@ a {
 
 .fat-get-started {
     text-align: right;
+    width: fit-content;
+}
+
+.fat-button {
+    cursor: pointer;
+    /*display: block;*/
+    /*padding: 10px;*/
+    /*margin: 20px auto 0;*/
+    border: 2px solid var(--menuColor);
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: var(--menuColor);
+    color: var(--accentColor);
+    transition: 0.6s ease;
+    letter-spacing: 2px;
+    height: 30px;
+    width: 120px;
+}
+
+#join-box-fat-container {
+    text-align: center;
+}
+
+.fat-button:hover {
+    border-bottom: 1px solid var(--accentColor);
+}
+
+.fat-button-container {
+    text-align: right;
+    padding: 20px;
 }
 
 
@@ -144,6 +174,8 @@ a {
 
 .nav-logo {
     color: var(--textColor);
+    font-family: Acme serif;
+    font-size: 50px;
 }
 
 .nav-list {
@@ -217,6 +249,16 @@ a {
     display: block;
 }
 
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.socials {
+    padding-top: 10px;
+    height: 100%;
+}
+
 
 
 /*MAIN------------------------------------------------------*/
@@ -248,7 +290,7 @@ a {
     height: auto;
     margin: 50px 0;
     color: var(--textColor);
-    padding: 10px 20px;
+    padding: 15px 20px 20px;
     /*border: 1px solid #9A989F;*/
     display: flex;
     flex-direction: column;

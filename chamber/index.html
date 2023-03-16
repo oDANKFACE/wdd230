@@ -10,14 +10,14 @@
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">-->
+
 </head>
 <body>
 <header>
     <div id="home-banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
 
     <nav class="nav-bar">
-        <a class="nav-logo">My Logo</a>
+        <a class="nav-logo" href="index.html">Em.</a>
         <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="directory.html">Directory</a></li>
@@ -25,6 +25,11 @@
             <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
+        <div class="socials">
+            <a class="social-link" href="https://www.facebook.com/" alt="Facebook icon"><img class="social-icon" src="images/fb-icon.png"></a>
+            <a class="social-link" href="https://www.linkedin.com/" alt="Linkedin icon"><img class="social-icon" src="images/in-icon.png"></a>
+        </div>
+
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -46,7 +51,9 @@
                 dapibus magna maximus. Aenean efficitur augue sed ipsum suscipit, nec finibus velit tempor. In venenatis
                 in ligula eget volutpat. Nunc accumsan arcu augue, sit amet mollis sapien interdum nec. Etiam eu lectus.
             </div>
-            <div class="fat-get-started"><button>Get Started Button</button></div>
+            <div class="fat-button-container">
+                <a class="fat-get-started" href="join.html"><button class="fat-button">Join Now</button></a>
+            </div>
             <picture>
                 <source media="(min-width: 992px)" srcset="images/heroes/wdd230_1000.jpg">
                 <source media="(min-width: 768px)" srcset="images/heroes/wdd230_500.jpg">
@@ -68,11 +75,6 @@
 
         <div id="weather-box" class="home-box content-box">
 
-<!--            Current temperature,-->
-<!--            Current condition, e.g., "Partly Cloudy",-->
-<!--            Icon representation of the weather,-->
-<!--            Wind speed, and-->
-<!--            Wind chill which is determined from the temp and speed and marked "N/A" if not applicable, given the conditions.-->
             <div class="box-title">Weather</div>
 
             <div><span id="current-temp"></span>&#x2109;</div>
@@ -81,26 +83,6 @@
             <div>Wind speed: <span id="wind-speed"></span> mph</div>
             <div>Wind chill: <span id="wind-chill"></span></div>
 
-
-
-
-
-<!--            <div id="weather-top">-->
-<!--                <div id="weather-symbol">Amon Sul</div>-->
-<!--                <div class="weather-value"><span id="weather-degrees">40</span>&#x2109;</div>-->
-<!--            </div>-->
-<!--            <div id="weather-bar" class="accent-bar"></div>-->
-<!--            <div id="weather-bottom">-->
-<!--                <div class="weather-item">-->
-<!--                    <div class="weather-label">Wind Speed:</div>-->
-<!--                    <div class="weather-value"><span id="wind-speed">33</span>mph</div>-->
-<!--                </div>-->
-<!--                <div class="weather-item">-->
-<!--                    <div class="weather-label">Wind Chill:</div>-->
-<!--                    <div class="weather-value"><span id="wind-chill"></span></div>-->
-<!--                </div>-->
-
-<!--            </div>-->
         </div>
 
 
@@ -152,7 +134,9 @@
             </div>
         </div>
         <div id="join-box" class="home-box content-box">
-            <div class="join-button"><button>Get Started Button</button></div>
+            <div id="join-box-fat-container" class="fat-button-container">
+                <a class="fat-get-started" href="join.html"><button class="fat-button">Join Now</button></a>
+            </div>
             <div class="box-content">Yield yourselves up unto us and become acquainted with our business practices,
             and become our brethren that ye may be like unto us.</div>
         </div>
