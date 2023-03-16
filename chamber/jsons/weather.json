@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 112.0069,
+    "lat": 40.3141
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 269.1,
+    "feels_like": 264.36,
+    "temp_min": 269.1,
+    "temp_max": 269.1,
+    "pressure": 1029,
+    "humidity": 29,
+    "sea_level": 1029,
+    "grnd_level": 854
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.44,
+    "deg": 91,
+    "gust": 4.4
+  },
+  "clouds": {
+    "all": 27
+  },
+  "dt": 1678923053,
+  "sys": {
+    "country": "CN",
+    "sunrise": 1678920195,
+    "sunset": 1678963109
+  },
+  "timezone": 28800,
+  "id": 7516270,
+  "name": "Youwei",
+  "cod": 200
+}
