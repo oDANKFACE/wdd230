@@ -1,0 +1,23 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+    background: cornsilk;
+    box-shadow: black;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+section {
+    background: dodgerblue;
+    border: 1px solid black;
+    padding: 10px 20px 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    display: block;
+}
