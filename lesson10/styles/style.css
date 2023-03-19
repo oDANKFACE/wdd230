@@ -1,0 +1,13 @@
+main {
+    text-align: center;
+}
+
+#weather-box {
+    text-align: center;
+}
+
+.box-title {
+    background: skyblue;
+    color: black;
+}
+
