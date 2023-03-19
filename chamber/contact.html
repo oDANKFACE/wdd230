@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website for fictional Chamber of Commerce located in Eagle Mountain, Utah.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+<header>
+    <div id="home-banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+
+    <nav class="nav-bar">
+        <a class="nav-logo" href="index.html">Em.</a>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="directory.html">Directory</a></li>
+            <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+            <li class="nav-item"><a class="nav-link" href="join.html">Join</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="socials">
+            <a class="social-link" href="https://www.facebook.com/"><img class="social-icon" src="images/fb-icon.png"
+                                                                         alt="Facebook icon"></a>
+            <a class="social-link" href="https://www.linkedin.com/"><img class="social-icon" src="images/in-icon.png"
+                                                                         alt="Linkedin icon"></a>
+        </div>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="contact-page">
+
+        <h1>Reach Out To Us</h1>
+
+
+        <div class="contact-us contact-page-section">
+            <div class="contact-info">
+                <h2 class="contact-heading">Contact Us</h2>
+                <div class="company-name contact-info-detail">Chamber of Commerce</div>
+                <div class="contact-address">
+
+                    <div id="address-top" class="contact-info-detail">123 Main Street</div>
+                    <div class="contact-info-detail">Anytown, USA 12345</div>
+                </div>
+                <div class="contact-info-detail">Email: info@chamber.com</div>
+                <div class="contact-info-detail">Phone: (123) 456-7890</div>
+            </div>
+            <div class="contact-map">
+                <img class="contact-info-img" src="images/map-location.jpeg"
+                     alt="Map Location">
+            </div>
+        </div>
+
+
+        <div class="general-inquiries contact-page-section">
+            <h2 class="contact-heading">General Inquiries</h2>
+            <div class="inquiry-type">
+                <div class="inquiry-type-heading">Membership</div>
+                <div class="individual-contact">Van Helsing</div>
+                <a class="contact-link" href="tel:555-555-5555">555-555-5555</a>
+                <a class="contact-link" href="mailto:membership@company.com">van@helsing.com</a>
+            </div>
+
+            <div class="inquiry-type">
+                <div class="inquiry-type-heading">Events</div>
+                <div class="individual-contact">Ash Ketchum</div>
+                <a class="contact-link" href="tel:555-555-5555">555-555-5555</a>
+                <a class="contact-link" href="mailto:events@company.com">gottacatch@emall.com</a>
+            </div>
+
+            <div class="inquiry-type">
+                <div class="inquiry-type-heading">Marketing</div>
+                <div class="individual-contact">R2-D2</div>
+                <a class="contact-link" href="tel:555-555-5555">555-555-5555</a>
+                <a class="contact-link" href="mailto:marketing@company.com">bleepboop@woooYOWWWWWWW.com</a>
+            </div>
+        </div>
+
+
+        <div id="get-in-touch" class="contact-page-section">
+            <h2 class="contact-heading">Get In Touch</h2>
+            <div id="contact-form">
+                <form>
+
+                    <div class="contact-form-section">
+                        <div class="form-item-container">
+
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-item-container">
+
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div class="form-item-container">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-item-container">
+                            <label for="company-name">Company Name:</label>
+                            <input type="text" id="company-name" name="company-name" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div class="form-item-container">
+
+                            <label>Are you a Chamber Member?</label>
+                            <div class="radio-item">
+
+                                <input type="radio" id="yes" name="chamber-member" value="yes">
+                                <label class="radio-label" for="yes">Yes</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="no" name="chamber-member" value="no">
+                                <label class="radio-label" for="no">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div id="inquiry-box-container">
+                            <label for="inquiry-box">Inquiry:</label>
+                            <textarea id="inquiry-box" name="inquiry" required></textarea>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+    <div id="current-date">Current Date Here</div>
+    <div class="footer-flex">
+        <div class="footer-top">
+            <a class="footer-nav-logo" href="index.html">Em.</a>
+            <div class="footer-title"><h2>Eagle Mountain Chamber of Commerce</h2></div>
+            <div id="lastVisit">Days since your last visit:</div>
+        </div>
+        <div class="footer-bar footer-bar1 accent-bar"></div>
+        <div class="footer-middle">
+            <div>1234 Mulberry St</div>
+            <div>emcoc@eaglemountainutah.com</div>
+            <div>555-555-1234</div>
+            <div><a href="https://goo.gl/maps/bsFuf4o1CWknCmcXA">Click Here For Location</a></div>
+        </div>
+        <div class="footer-bar accent-bar"></div>
+        <div class="footer-bottom">
+            <div>Copyright &copy;<span id="copyright"></span></div>
+            <div>Darien Weller</div>
+            <div>WDD 230 Project</div>
+            <div id="lastModified"></div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="scripts/scripts.js"></script>
+<script src="scripts/lastvisit.js"></script>
+<script src="scripts/hamburger.js"></script>
+
+</body>
+</html>
