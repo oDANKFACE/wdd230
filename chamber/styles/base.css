@@ -146,7 +146,7 @@ a {
 }
 
 
-#current-date {
+.current-date {
     background-color: var(--accentColor);
     height: 28px;
     width: 100%;

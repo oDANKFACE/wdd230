@@ -1,6 +1,6 @@
 // select the elements to manipulate (output to)
-const datefield = document.querySelector("#current-date");
-const copyright = document.querySelector('#copyright');
+const datefield = document.querySelector(".current-date");
+const copyright = document.querySelector('.copyright');
 
 // derive the current date using a date object
 const currentDate = new Date();
