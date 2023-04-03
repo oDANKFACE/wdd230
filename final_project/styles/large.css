@@ -1,0 +1,50 @@
+@media screen and (min-width: 992px) {
+
+
+    .nav-logo-container {
+        display: block;
+    }
+
+    .socials-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+    }
+
+    .nav-item {
+        display: inline-block;
+        line-height: 0;
+        height: 0;
+    }
+
+
+    .nav-link {
+        color: var(--main-color);
+    }
+
+
+
+
+
+    .nav-list .nav-item {
+        margin-right: 60px;
+    }
+
+    .nav-list .nav-item:last-child {
+        margin-right: 0;
+    }
+
+
+}
