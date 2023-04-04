@@ -48,87 +48,47 @@
 
 
 <main>
+    <form id="drink-order-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
 
-    <div class="hero-container">
-        <div class="hero-img-container"><img class="hero-img" src="images/hero_img.jpg" alt="tons of berries"></div>
-        <div class="hero-card">
-            <div class="hero-title">Yum Yum Smoothie</div>
-            <div class="hero-subtitle">Have It Your Way!</div>
-            <div class="hero-card-content">
-                <p>Looking for a fun and healthy way to start your day? Check out our delicious fruits, veggies, and
-                    juices to create your perfect blend.</p>
-                <div class="hero-button">Order Now</div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <div class="fruit-selection-container">
+
+            <div class="fruit-1-container">
+                <label for="fruit1">Fruit 1:</label>
+                <select class="fruit-select" id="fruit1" name="fruit1" required>
+                </select>
             </div>
-        </div>
-    </div>
-
-    <!--    <div>-->
-    <!--        Nestled along the stunning coast of Malibu, El Matador Beach is a true gem. With its striking rock formations-->
-    <!--        and crystal-clear waters, this secluded beach feels like a hidden paradise. The soft sand and gentle waves-->
-    <!--        create the perfect setting for a relaxing day spent lounging in the sun or taking a refreshing dip in the ocean.-->
-    <!--        Whether you're a local looking for a quick escape or a traveler seeking a slice of California's natural beauty,-->
-    <!--        El Matador Beach is an absolute must-visit.-->
-    <!--    </div>-->
 
 
-    <div class="weather-card">
-        <div class="current-weather">
-            <h2>Current Weather in <span class="city-name"></span></h2>
-            <div class="weather-info">
-                <p class="temp"></p>
-                <p class="condition"></p>
-                <p class="humidity"></p>
+            <div class="fruit-2-container">
+                <label for="fruit2">Fruit 2:</label>
+                <select class="fruit-select" id="fruit2" name="fruit2" required>
+                </select>
             </div>
-        </div>
-        <div class="forecast">
-            <h3>3-Day Forecast</h3>
-            <div class="forecast-info">
-                <div class="day1">
-                    <p class="date"></p>
-                    <p class="temp"></p>
-                </div>
-                <div class="day2">
-                    <p class="date"></p>
-                    <p class="temp"></p>
-                </div>
-                <div class="day3">
-                    <p class="date"></p>
-                    <p class="temp"></p>
-                </div>
+
+            <div class="fruit-3-container">
+                <label for="fruit3">Fruit 3:</label>
+                <select class="fruit-select" id="fruit3" name="fruit3" required>
+                </select>
             </div>
+
+
         </div>
-    </div>
 
+        <label for="instructions">Special Instructions:</label>
+        <textarea id="instructions" name="instructions"></textarea>
 
-    <!--    <div class="weather-container">-->
+        <input type="submit" value="Submit">
 
-    <!--        Weather For Carlsbad-->
-    <!--        <div class="current-temp">Current Temp</div>-->
-    <!--        <div class="condition-description">Condition Description</div>-->
-    <!--        <div class="humidity">Humidity</div>-->
-    <!--        <div class="weather-forecast">Forecast</div>-->
-
-
-    <!--        <div id="weather-box" class="home-box content-box">-->
-
-    <!--            <div class="box-title">Weather</div>-->
-
-    <!--            <div><span id="current-temp"></span>&#x2109;</div>-->
-    <!--            <div id="current-condition"></div>-->
-    <!--            <img id="weather-icon" alt="weather condition icon" src="images/placeholder.jpg">-->
-    <!--            <div>Wind speed: <span id="wind-speed"></span> mph</div>-->
-    <!--            <div>Wind chill: <span id="wind-chill"></span></div>-->
-
-    <!--        </div>-->
-
-    <!--    </div>-->
-
-
-    <div class="score-card">
-        <div class="score-card-title">Way To Go!</div>
-        <div class="score-card-info">You have made <span class="score">X</span> drinks.</div>
-        <div class="congrats-msg">You suck -> Well done!</div>
-    </div>
+        <div id="output-area"></div>
+    </form>
 
 </main>
 
@@ -178,6 +138,7 @@
 
 
 <script src="scripts/hamburger.js"></script>
-<script src="scripts/weather.js"></script>
+
+<script src="scripts/fetch_fruits.js"></script>
 </body>
 </html>
