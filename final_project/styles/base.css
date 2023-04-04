@@ -198,6 +198,7 @@ header {
 .hero-img {
     height: 330px;
     background: var(--accent-two);
+    margin-bottom: 300px;
 }
 
 .hero-card {
@@ -226,6 +227,86 @@ header {
 
 main {
     /*display: none;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0 2px 10px #000000;
+    background-color: var(--main-color);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.current-weather {
+    text-align: center;
+}
+
+.current-weather h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.weather-info p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.forecast {
+    margin-top: 20px;
+}
+
+.forecast h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.forecast-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forecast-info div {
+    text-align: center;
+}
+
+.forecast-info .date {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.forecast-info .temp {
+    font-size: 24px;
 }
 
 
