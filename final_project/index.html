@@ -20,9 +20,9 @@
 
     <div class="header-container">
         <div class="socials-container">
-            <div class="social-item fb-icon">FB</div>
-            <div class="social-item ig-icon">IG</div>
-            <div class="social-item tt-icon">TT</div>
+            <a href=""><img class="social-item fb-icon" src="images/fb_icon.png"></a>
+            <a href=""><img class="social-item ig-icon" src="images/ig_icon.png"></a>
+            <a href=""><img class="social-item tt-icon" src="images/tw_icon.png"></a>
         </div>
         <nav class="nav-bar">
             <div class="hamburger">
@@ -37,7 +37,7 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="fresh.html">Fresh</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -55,20 +55,24 @@
             <div class="hero-title">Yum Yum Smoothie</div>
             <div class="hero-subtitle">Have It Your Way!</div>
             <div class="hero-card-content">
-                <p>Looking for a fun and healthy way to start your day? Check out our delicious fruits, veggies, and
-                    juices to create your perfect blend.</p>
-                <div class="hero-button">Order Now</div>
+                <div>Looking for a fun and healthy way to start your day? Check out our delicious fruits, veggies, and
+                    juices to create your perfect blend.</div>
+                <a class="hero-button-link" href="fresh.html"><div class="hero-button">Order Now</div></a>
             </div>
         </div>
     </div>
 
-    <!--    <div>-->
-    <!--        Nestled along the stunning coast of Malibu, El Matador Beach is a true gem. With its striking rock formations-->
-    <!--        and crystal-clear waters, this secluded beach feels like a hidden paradise. The soft sand and gentle waves-->
-    <!--        create the perfect setting for a relaxing day spent lounging in the sun or taking a refreshing dip in the ocean.-->
-    <!--        Whether you're a local looking for a quick escape or a traveler seeking a slice of California's natural beauty,-->
-    <!--        El Matador Beach is an absolute must-visit.-->
-    <!--    </div>-->
+    <div class="beach-container">
+        <img class="beach-img" src="images/beach.webp">
+        <div class="beach-description">
+            Nestled along the stunning coast of Malibu, El Matador Beach is a true gem. With its striking rock formations
+            and crystal-clear waters, this secluded beach feels like a hidden paradise. The soft sand and gentle waves
+            create the perfect setting for a relaxing day spent lounging in the sun or taking a refreshing dip in the ocean.
+            Whether you're a local looking for a quick escape or a traveler seeking a slice of California's natural beauty,
+            El Matador Beach is an absolute must-visit
+        </div>
+
+    </div>
 
 
     <div class="weather-card">
@@ -144,35 +148,30 @@
             <form>
                 <input type="email" id="footer-email" name="email-signup" placeholder="Enter your email address">
                 <label id="footer-email-label" for="footer-email"></label>
-                <button type="submit">Subscribe</button>
+                <button id="footer-email-submit" type="submit">Subscribe</button>
             </form>
         </div>
-        <div class="contact-info">
-            <h3>Contact Us</h3>
-            <ul>
-                <li><i class="fas fa-phone"></i> Phone: 555-1234</li>
-                <li><i class="fas fa-map-marker-alt"></i> Address: 123 Main St., Anytown, USA</li>
-                <li><i class="far fa-clock"></i> Business Hours: Mon-Fri 9am-5pm</li>
-                <li><i class="far fa-envelope"></i> Email: info@example.com</li>
-            </ul>
+        <div class="contact-info footer-side-item">
+            <div class="footer-title">Contact Us</div>
+            <div class="contact-info-items">Phone: 123-4567</div>
+            <div class="contact-info-items">Address: 1200 W 5390 N, Alderaan</div>
+            <div class="contact-info-items">Business Hours: Mon-Fri 9pm-5am</div>
+            <div class="contact-info-items">Email: imnotascammer@gmial.com</div>
         </div>
-        <div class="social-media">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
+        <div class="social-media footer-side-item">
+            <div class="footer-title">Follow Us</div>
+            <div class="footer-socials-container">
+                <a href=""><img class="social-item fb-icon" src="images/fb_icon.png"></a>
+                <a href=""><img class="social-item ig-icon" src="images/ig_icon.png"></a>
+                <a href=""><img class="social-item tt-icon" src="images/tw_icon.png"></a>
+            </div>
         </div>
     </div>
     <div class="legal-info">
-        <ul>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-        </ul>
-        <p>&copy; 2023 Example Company. All rights reserved.</p>
+        <div><a class="legal-link" href="#">Sitemap</a></div>
+        <div><a class="legal-link" href="#">Privacy</a></div>
+        <div><a class="legal-link" href="#">Terms</a></div>
+        <div>&copy; 3023 BingBong. All rights preserved in a jar.</div>
     </div>
 </footer>
 

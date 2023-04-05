@@ -15,7 +15,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${ap
         document.querySelector(".humidity").textContent = `Humidity: ${humidity}%`;
     })
 
-
+https://api.openweathermap.org/data/3.0/onecall
 
 // 3-day Forecast for Carlsbad
 fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city_name}&appid=${api_key}&units=metric`)

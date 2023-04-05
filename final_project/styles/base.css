@@ -67,7 +67,9 @@ header {
 /*********************************************************************/
 
 .socials-container {
-
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .socials-container .social-item {
@@ -80,6 +82,7 @@ header {
 
 .social-item {
     display: inline-block;
+    width: 28px;
 }
 
 
@@ -225,11 +228,14 @@ main {
     width: 560px;
     max-width: 80%;
     height: min-content;
-    background: var(--accent-one);
+    border: 8px solid var(--accent-one);
+    border-radius: 30px;
+    background: white;
     z-index: 1;
     padding: 24px;
     text-align: center;
 }
+
 
 .hero-title {
     font-size: 30px;
@@ -239,6 +245,48 @@ main {
     font-size: 50px;
 }
 
+.hero-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-button-link, .hero-button-link:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-button {
+    background: var(--accent-one);
+    margin: 20px auto 0;
+    padding: 10px;
+    width: 180px;
+    font-size: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+/* Beach *************************************************************/
+/*********************************************************************/
+
+.beach-container {
+    padding: 0 50px;
+}
+
+.beach-img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.beach-description {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
 
 
 
@@ -307,7 +355,7 @@ main {
 /* Fresh Page Form ***************************************************/
 /*********************************************************************/
 
-form {
+#drink-order-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -319,13 +367,13 @@ form {
     border-radius: 8px;
 }
 
-label {
+.fresh-label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-input, select, textarea {
+.fresh-input, .fruit-select, #instructions {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -366,6 +414,61 @@ textarea {
 
 
 
+/* About Us **********************************************************/
+/*********************************************************************/
+
+/* Style header */
+#about-us-heading {
+    background-color: var(--main-color);
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Style content sections */
+
+
+
+.history-text,
+.area-text,
+.contact-text {
+    margin-bottom: 20px;
+}
+
+.history-text p,
+.area-text p,
+.contact-text p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.about-us-title {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-us-paragraph {
+    margin: 15px auto;
+}
+
+.about-us-container {
+    padding: 40px;
+}
+
+.about-us-section {
+    margin: 60px auto;
+}
+
+
 
 
 
@@ -387,6 +490,19 @@ footer {
     margin: 0 auto;
 }
 
+.footer-title {
+    font-weight: 1000;
+    font-size: 26px;
+    margin-bottom: 11px;
+}
+
+.footer-side-item {
+    margin-top: 32px;
+    min-height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 /* Join The Wave *****************************************************/
 /*********************************************************************/
@@ -401,6 +517,11 @@ footer {
 
 .join-title {
     font-size: 60px;
+    font-weight: 1000;
+}
+
+.join-message {
+    margin-left: 20px;
 }
 
 .join-the-wave form {
@@ -415,10 +536,10 @@ footer {
     flex: 1;
 }
 
-.join-the-wave button[type="submit"] {
+#footer-email-submit {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--accent-one);
+    color: white;
     border: none;
     border-radius: 5px;
     margin-left: 10px;
@@ -430,20 +551,17 @@ footer {
 /*********************************************************************/
 
 
-.contact-info ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-info li {
+.contact-info {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 180px;
+    min-height: 160px;
+    /*gap: 10px;*/
 }
 
-.contact-info li i {
-    margin-right: 10px;
+.contact-info-items {
+    margin-left: 10px;
 }
 
 
@@ -465,40 +583,37 @@ footer {
 }
 
 .social-media li a {
-    color: #000;
+    color: black;
 }
 
-.legal-info {
+
+.footer-socials-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    border-top: 1px solid #ccc;
+    gap: 20px;
 }
+
 
 
 
 /* Bottom ************************************************************/
 /*********************************************************************/
 
-
-.legal-info ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.legal-info {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 20px;
+    border-top: 1px solid #ccc;
 }
 
-.legal-info li {
-    margin-right: 10px;
+.legal-info * {
+    margin: 0 6px;
 }
 
-.legal-info li a {
-    color: #000;
-}
-
-.legal-info p {
-    margin: 0;
+.legal-link {
+    color: black;
 }

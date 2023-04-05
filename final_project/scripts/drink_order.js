@@ -16,6 +16,9 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
                 form.elements['fruit2'].value,
                 form.elements['fruit3'].value
             ];
+            console.log(selectedFruitIds[0]);
+            console.log(selectedFruitIds[1]);
+            console.log(selectedFruitIds[2]);
 
             // calculate the total nutritional values
             let totalNutrition = {
@@ -27,7 +30,7 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
             };
 
             selectedFruitIds.forEach(fruitId => {
-                const selectedFruit = fruits.find(fruit => fruit.id == fruitId);
+                const selectedFruit = fruits.find(fruit => fruit.id === fruitId);
                 totalNutrition.carbohydrates += selectedFruit.nutritions.carbohydrates;
                 totalNutrition.protein += selectedFruit.nutritions.protein;
                 totalNutrition.fat += selectedFruit.nutritions.fat;

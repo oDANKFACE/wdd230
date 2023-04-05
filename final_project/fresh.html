@@ -20,9 +20,9 @@
 
     <div class="header-container">
         <div class="socials-container">
-            <div class="social-item fb-icon">FB</div>
-            <div class="social-item ig-icon">IG</div>
-            <div class="social-item tt-icon">TT</div>
+            <a href=""><img class="social-item fb-icon" src="images/fb_icon.png"></a>
+            <a href=""><img class="social-item ig-icon" src="images/ig_icon.png"></a>
+            <a href=""><img class="social-item tt-icon" src="images/tw_icon.png"></a>
         </div>
         <nav class="nav-bar">
             <div class="hamburger">
@@ -37,7 +37,7 @@
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="fresh.html">Fresh</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -48,33 +48,33 @@
 
 
 <main>
-    <form id="drink-order-form">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required>
+    <form id="drink-order-form" onsubmit="return ">
+        <label class="fresh-label" for="first-name">First Name:</label>
+        <input class="fresh-input" type="text" id="first-name" name="first-name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label class="fresh-label" for="email">Email:</label>
+        <input class="fresh-input" type="email" id="email" name="email" required>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
+        <label class="fresh-label" for="phone">Phone Number:</label>
+        <input class="fresh-input" type="tel" id="phone" name="phone" required>
 
         <div class="fruit-selection-container">
 
             <div class="fruit-1-container">
-                <label for="fruit1">Fruit 1:</label>
+                <label class="fresh-label" for="fruit1">Fruit 1:</label>
                 <select class="fruit-select" id="fruit1" name="fruit1" required>
                 </select>
             </div>
 
 
             <div class="fruit-2-container">
-                <label for="fruit2">Fruit 2:</label>
+                <label class="fresh-label" for="fruit2">Fruit 2:</label>
                 <select class="fruit-select" id="fruit2" name="fruit2" required>
                 </select>
             </div>
 
             <div class="fruit-3-container">
-                <label for="fruit3">Fruit 3:</label>
+                <label class="fresh-label" for="fruit3">Fruit 3:</label>
                 <select class="fruit-select" id="fruit3" name="fruit3" required>
                 </select>
             </div>
@@ -85,7 +85,7 @@
         <label for="instructions">Special Instructions:</label>
         <textarea id="instructions" name="instructions"></textarea>
 
-        <input type="submit" value="Submit">
+        <input class="fresh-input" type="submit" value="Submit">
 
         <div id="output-area"></div>
     </form>
@@ -104,35 +104,30 @@
             <form>
                 <input type="email" id="footer-email" name="email-signup" placeholder="Enter your email address">
                 <label id="footer-email-label" for="footer-email"></label>
-                <button type="submit">Subscribe</button>
+                <button id="footer-email-submit" type="submit">Subscribe</button>
             </form>
         </div>
-        <div class="contact-info">
-            <h3>Contact Us</h3>
-            <ul>
-                <li><i class="fas fa-phone"></i> Phone: 555-1234</li>
-                <li><i class="fas fa-map-marker-alt"></i> Address: 123 Main St., Anytown, USA</li>
-                <li><i class="far fa-clock"></i> Business Hours: Mon-Fri 9am-5pm</li>
-                <li><i class="far fa-envelope"></i> Email: info@example.com</li>
-            </ul>
+        <div class="contact-info footer-side-item">
+            <div class="footer-title">Contact Us</div>
+            <div class="contact-info-items">Phone: 123-4567</div>
+            <div class="contact-info-items">Address: 1200 W 5390 N, Alderaan</div>
+            <div class="contact-info-items">Business Hours: Mon-Fri 9pm-5am</div>
+            <div class="contact-info-items">Email: imnotascammer@gmial.com</div>
         </div>
-        <div class="social-media">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
+        <div class="social-media footer-side-item">
+            <div class="footer-title">Follow Us</div>
+            <div class="footer-socials-container">
+                <a href=""><img class="social-item fb-icon" src="images/fb_icon.png"></a>
+                <a href=""><img class="social-item ig-icon" src="images/ig_icon.png"></a>
+                <a href=""><img class="social-item tt-icon" src="images/tw_icon.png"></a>
+            </div>
         </div>
     </div>
     <div class="legal-info">
-        <ul>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-        </ul>
-        <p>&copy; 2023 Example Company. All rights reserved.</p>
+        <div><a class="legal-link" href="#">Sitemap</a></div>
+        <div><a class="legal-link" href="#">Privacy</a></div>
+        <div><a class="legal-link" href="#">Terms</a></div>
+        <div>&copy; 3023 BingBong. All rights preserved in a jar.</div>
     </div>
 </footer>
 
