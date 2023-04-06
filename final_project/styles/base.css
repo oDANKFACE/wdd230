@@ -368,6 +368,19 @@ main {
 }
 
 
+/* Weather ***********************************************************/
+/*********************************************************************/
+
+.score-card {
+    margin: 30px auto;
+    border: 1px solid #CCCCCC;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 300px;
+    max-height: min-content;
+}
+
+
 /* Fresh Page Form ***************************************************/
 /*********************************************************************/
 
@@ -377,9 +390,9 @@ main {
     align-items: flex-start;
     gap: 1rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #CCCCCC;
     border-radius: 8px;
 }
 
@@ -392,7 +405,7 @@ main {
 .fresh-input, .fruit-select, #instructions {
     width: 100%;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #CCCCCC;
     border-radius: 4px;
     font-size: 1rem;
     line-height: 1.5;
@@ -400,7 +413,7 @@ main {
 
 input[type="submit"] {
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 4px;
     padding: 0.5rem 1rem;
@@ -416,15 +429,39 @@ textarea {
     height: 100px;
 }
 
-
-
-
 .fruit-selection-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
     width: 100%;
+}
+
+.fresh-out {
+    font-size: 20px;
+    max-width: 100%;
+}
+
+#output-area {
+    margin: 30px auto;
+    border: 1px solid #CCCCCC;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 300px;
+    display: none;
+    max-height: min-content;
+}
+
+.output-calc-val {
+    display: inline-block;
+}
+
+.special-instructions-out {
+    max-width: 300px;
+}
+
+#special-instructions {
+    display: block;
 }
 
 

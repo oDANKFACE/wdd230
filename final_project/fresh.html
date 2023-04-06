@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Website for a fictitious fruity food company">
+    <meta name="description" content="A drink order form for the Bountiful Foods company">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods</title>
+    <title>Bountiful Foods Drink Order</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="images/milkshake.png">
 </head>
 
 <body>
@@ -20,9 +19,9 @@
 
     <div class="header-container">
         <div class="socials-container">
-            <a href=""><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon"></a>
-            <a href=""><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon"></a>
-            <a href=""><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon"></a>
+            <a href="https://www.facebook.com/"><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon" loading="lazy"></a>
+            <a href="https://www.instagram.com/"><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon" loading="lazy"></a>
+            <a href="https://twitter.com/"><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon" loading="lazy"></a>
         </div>
         <nav class="nav-bar">
             <div class="hamburger">
@@ -48,9 +47,9 @@
 
 
 <main>
-    <form id="drink-order-form" onsubmit="return ">
+    <form id="drink-order-form" onsubmit="return false">
         <label class="fresh-label" for="first-name">First Name:</label>
-        <input class="fresh-input" type="text" id="first-name" name="first-name" required>
+        <input class="fresh-input" type="text" id="first-name" name="firstName" required>
 
         <label class="fresh-label" for="email">Email:</label>
         <input class="fresh-input" type="email" id="email" name="email" required>
@@ -63,6 +62,7 @@
             <div class="fruit-1-container">
                 <label class="fresh-label" for="fruit1">Fruit 1:</label>
                 <select class="fruit-select" id="fruit1" name="fruit1" required>
+                    <option value="" disabled selected>Select a fruit</option>
                 </select>
             </div>
 
@@ -70,12 +70,14 @@
             <div class="fruit-2-container">
                 <label class="fresh-label" for="fruit2">Fruit 2:</label>
                 <select class="fruit-select" id="fruit2" name="fruit2" required>
+                    <option value="" disabled selected>Select another fruit</option>
                 </select>
             </div>
 
             <div class="fruit-3-container">
                 <label class="fresh-label" for="fruit3">Fruit 3:</label>
                 <select class="fruit-select" id="fruit3" name="fruit3" required>
+                    <option value="" disabled selected>Select ANOTHER fruit</option>
                 </select>
             </div>
 
@@ -85,10 +87,10 @@
         <label for="instructions">Special Instructions:</label>
         <textarea id="instructions" name="instructions"></textarea>
 
-        <input class="fresh-input" type="submit" value="Submit">
+        <input id="fresh-submit" class="fresh-input" type="submit" value="Submit">
 
-        <div id="output-area"></div>
     </form>
+    <div id="output-area"></div>
 
 </main>
 
@@ -117,9 +119,9 @@
         <div class="social-media footer-side-item">
             <div class="footer-title">Follow Us</div>
             <div class="footer-socials-container">
-                <a href=""><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon"></a>
-                <a href=""><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon"></a>
-                <a href=""><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/"><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon" loading="lazy"></a>
+                <a href="https://www.instagram.com/"><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon" loading="lazy"></a>
+                <a href="https://twitter.com/"><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon" loading="lazy"></a>
             </div>
         </div>
     </div>
@@ -133,7 +135,7 @@
 
 
 <script src="scripts/hamburger.js"></script>
-
+<script src="scripts/drink_order_new.js"></script>
 <script src="scripts/fetch_fruits.js"></script>
 </body>
 </html>

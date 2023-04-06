@@ -4,7 +4,7 @@ const city_name = 'Carlsbad';
 const units = 'imperial';
 const lat = '33.1581';
 const lon = '-117.3506';
-const exclude = 'minutely,hourly,alerts'
+const exclude = 'minutely,hourly,alerts';
 
 const max1 = document.querySelector('#max1');
 const max2 = document.querySelector('#max2');
@@ -46,10 +46,10 @@ fetch(`https://api.openweathermap.org/data/3.0/onecall?appid=${api_key}&lat=${la
         forecastDate2.setDate(today.getDate() + 2);
         forecastDate3.setDate(today.getDate() + 3);
 
-        const options = { weekday: 'long'}
-        date1.textContent = forecastDate1.toLocaleString('en-US', options)
-        date2.textContent = forecastDate2.toLocaleString('en-US', options)
-        date3.textContent = forecastDate3.toLocaleString('en-US', options)
+        const options = {weekday: 'long'};
+        date1.textContent = forecastDate1.toLocaleString('en-US', options);
+        date2.textContent = forecastDate2.toLocaleString('en-US', options);
+        date3.textContent = forecastDate3.toLocaleString('en-US', options);
 
         let dailyForecast = [];
         dailyForecast[0] = data.daily[1];

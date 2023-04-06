@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Website for a fictitious fruity food company">
+    <meta name="description" content="The home page for the Bountiful Food website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods</title>
+    <title>Bountiful Foods Home Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="images/milkshake.png">
 </head>
 
 <body>
@@ -20,9 +19,9 @@
 
     <div class="header-container">
         <div class="socials-container">
-            <a href=""><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon"></a>
-            <a href=""><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon"></a>
-            <a href=""><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon"></a>
+            <a href="https://www.facebook.com/"><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon" loading="lazy"></a>
+            <a href="https://www.instagram.com/"><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon" loading="lazy"></a>
+            <a href="https://twitter.com/"><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon" loading="lazy"></a>
         </div>
         <nav class="nav-bar">
             <div class="hamburger">
@@ -50,7 +49,7 @@
 <main>
 
     <div class="hero-container">
-        <div class="hero-img-container"><img class="hero-img" src="images/hero_img.jpg" alt="tons of berries"></div>
+        <div class="hero-img-container"><img class="hero-img" src="images/hero_img.jpg" alt="tons of berries" loading="lazy"></div>
         <div class="hero-card">
             <div class="hero-title">Yum Yum Smoothie</div>
             <div class="hero-subtitle">Have It Your Way!</div>
@@ -66,7 +65,7 @@
     </div>
 
     <div class="beach-container">
-        <img class="beach-img" src="images/beach.webp" alt="El Matador beach rock formation">
+        <img class="beach-img" src="images/beach.webp" alt="El Matador beach rock formation" loading="lazy">
         <div class="beach-description">
             Nestled along the stunning coast of Malibu, El Matador Beach is a true gem. With its striking rock
             formations and crystal-clear waters, this secluded beach feels like a hidden paradise. The soft sand and
@@ -137,34 +136,11 @@
 </div>
 
 
-    <!--    <div class="weather-container">-->
-
-    <!--        Weather For Carlsbad-->
-    <!--        <div class="current-temp">Current Temp</div>-->
-    <!--        <div class="condition-description">Condition Description</div>-->
-    <!--        <div class="humidity">Humidity</div>-->
-    <!--        <div class="weather-forecast">Forecast</div>-->
-
-
-    <!--        <div id="weather-box" class="home-box content-box">-->
-
-    <!--            <div class="box-title">Weather</div>-->
-
-    <!--            <div><span id="current-temp"></span>&#x2109;</div>-->
-    <!--            <div id="current-condition"></div>-->
-    <!--            <img id="weather-icon" alt="weather condition icon" src="images/placeholder.jpg">-->
-    <!--            <div>Wind speed: <span id="wind-speed"></span> mph</div>-->
-    <!--            <div>Wind chill: <span id="wind-chill"></span></div>-->
-
-    <!--        </div>-->
-
-    <!--    </div>-->
-
 
     <div class="score-card">
-        <div class="score-card-title">Way To Go!</div>
-        <div class="score-card-info">You have made <span class="score">X</span> drinks.</div>
-        <div class="congrats-msg">You suck -> Well done!</div>
+        <div class="score-card-title">Specialty Drinks Ordered</div>
+        <div class="score-card-info">You have made <span class="score"></span> drinks.</div>
+        <div class="congrats-msg"></div>
     </div>
 
 </main>
@@ -194,9 +170,9 @@
         <div class="social-media footer-side-item">
             <div class="footer-title">Follow Us</div>
             <div class="footer-socials-container">
-                <a href=""><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon"></a>
-                <a href=""><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon"></a>
-                <a href=""><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon"></a>
+                <a href="https://www.facebook.com/"><img class="social-item fb-icon" src="images/fb_icon.png" alt="facebook icon" loading="lazy"></a>
+                <a href="https://www.instagram.com/"><img class="social-item ig-icon" src="images/ig_icon.png" alt="instagram icon" loading="lazy"></a>
+                <a href="https://twitter.com/"><img class="social-item tt-icon" src="images/tw_icon.png" alt="twitter icon" loading="lazy"></a>
             </div>
         </div>
     </div>
@@ -211,5 +187,6 @@
 
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/weather.js"></script>
+<script src="scripts/drink_count.js"></script>
 </body>
 </html>

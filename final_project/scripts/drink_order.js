@@ -30,7 +30,7 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
             };
 
             selectedFruitIds.forEach(fruitId => {
-                const selectedFruit = fruits.find(fruit => fruit.id === fruitId);
+                const selectedFruit = fruits.find(fruit => fruit.genus === fruitId);
                 totalNutrition.carbohydrates += selectedFruit.nutritions.carbohydrates;
                 totalNutrition.protein += selectedFruit.nutritions.protein;
                 totalNutrition.fat += selectedFruit.nutritions.fat;
